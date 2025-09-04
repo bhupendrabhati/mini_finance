@@ -582,7 +582,7 @@ Bootstrap 5 Dashboard Admin Template
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 col-12">
-                                    <p class="copyright-text">Mini Finance v1.0 — Deployed on 04 Sept 2025 - By Bhupendra Bhati</p>
+                                    <p class="copyright-text" id="footer-dynamic">Mini Finance v1.0 — Deployed on <span id="deploy-date"></span> - By Bhupendra Bhati</p>
                                 </div>
 
                             </div>
@@ -598,6 +598,18 @@ Bootstrap 5 Dashboard Admin Template
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/apexcharts.min.js"></script>
         <script src="js/custom.js"></script>
+
+        <script type="text/javascript">
+            // Set dynamic date and time in the footer
+            function formatDateTime(date) {
+                const options = { year: 'numeric', month: 'short', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+                return date.toLocaleString('en-GB', options).replace(',', '');
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+                var now = new Date();
+                document.getElementById('deploy-date').textContent = formatDateTime(now);
+            });
+        </script>
 
         <script type="text/javascript">
             var options = {
