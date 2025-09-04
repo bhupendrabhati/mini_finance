@@ -1,3 +1,11 @@
+/* Ensure long navbar brand text wraps and is visible */
+.navbar-brand {
+  white-space: normal !important;
+  word-break: break-word;
+  max-width: 100%;
+  line-height: 1.2;
+  display: block;
+}
 @media screen and (max-width: 580px) {
   .site-footer {
     padding-left: 8px;
