@@ -1,3 +1,21 @@
+@media screen and (max-width: 580px) {
+  .site-footer {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .copyright-text {
+    font-size: 12px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+}
+@media screen and (max-width: 400px) {
+  .copyright-text {
+    font-size: 10px;
+  }
+}
 /*
 
 Tooplate 2135 Mini Finance
@@ -34,7 +52,7 @@ https://www.tooplate.com/view/2135-mini-finance
   --p-font-size:                  18px;
   --menu-font-size:               14px;
   --btn-font-size:                12px;
-  --copyright-font-size:          10px;
+  --copyright-font-size:          15px;
 
   --border-radius-large:          100px;
   --border-radius-medium:         20px;
@@ -955,10 +973,24 @@ strong {
 .site-footer {
   padding-right: 20px;
   padding-left: 20px;
+  background: #22223b;
+  color: #fff;
+  margin-top: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  letter-spacing: 0.02em;
+  border-top: 2px solid #4a4e69;
 }
 
 .copyright-text {
   font-size: var(--copyright-font-size);
+  color: #fff;
+  text-align: center;
+  line-height: 1.7;
+  margin: 0;
+  letter-spacing: 0.01em;
+  word-spacing: 0.1em;
+  font-weight: 400;
 }
 
 
